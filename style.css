@@ -605,25 +605,26 @@ button { font-family: inherit; }
    ============================================ */
 .section-header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin-bottom: 40px;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 14px;
 }
 
 .section-header h2 {
     font-size: 2.1em;
     color: var(--primary);
     position: relative;
-    padding-bottom: 14px;
+    padding-bottom: 16px;
 }
 
 .section-header h2::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 52px;
     height: 4px;
     background: var(--accent);
@@ -632,23 +633,26 @@ button { font-family: inherit; }
 
 .section-desc {
     color: var(--text-light);
-    margin-top: 8px;
     font-size: 0.95em;
+    max-width: 560px;
 }
 
 .view-all {
     color: var(--secondary);
     font-weight: 600;
     font-size: 0.87em;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 6px;
     white-space: nowrap;
     transition: gap var(--transition);
     font-family: 'Inter', sans-serif;
+    border: 1px solid var(--border);
+    padding: 7px 16px;
+    border-radius: 99px;
 }
 
-.view-all:hover { gap: 10px; }
+.view-all:hover { gap: 10px; background: var(--light); }
 
 .card-link {
     display: inline-flex;
@@ -1752,7 +1756,7 @@ footer { background: var(--primary); color: white; }
 
     /* ---- Sections ---- */
     .section-pad { padding: 44px 0; }
-    .section-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+    .section-header { gap: 12px; }
     .section-header h2 { font-size: 1.7em; }
 
     /* ---- News ---- */
