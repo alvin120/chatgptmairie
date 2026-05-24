@@ -1,24 +1,82 @@
 // ============================================
-// HAMBURGER MENU
+// NAVBAR DRAWER (mobile)
 // ============================================
 const hamburger = document.getElementById('hamburger');
 const navbar    = document.getElementById('navbar');
 
+/* Injecter l'en-tête du drawer et le backdrop une seule fois */
+const mobileHeader = document.createElement('div');
+mobileHeader.className = 'nav-mobile-header';
+mobileHeader.innerHTML = `
+  <div class="nav-mobile-logo">
+    <i class="fas fa-landmark"></i>
+    <span>Mairie de Ville</span>
+  </div>
+  <button type="button" class="nav-close-btn" aria-label="Fermer le menu">
+    <i class="fas fa-times"></i>
+  </button>`;
+navbar.insertBefore(mobileHeader, navbar.firstChild);
+
+const backdrop = document.createElement('div');
+backdrop.className = 'nav-backdrop';
+backdrop.id = 'nav-backdrop';
+document.body.appendChild(backdrop);
+
+function openNav() {
+    hamburger.classList.add('open');
+    navbar.classList.add('open');
+    backdrop.classList.add('active');
+    hamburger.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeNav() {
+    hamburger.classList.remove('open');
+    navbar.classList.remove('open');
+    backdrop.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+}
+
 hamburger.addEventListener('click', () => {
-    const isOpen = hamburger.classList.toggle('open');
-    navbar.classList.toggle('open', isOpen);
-    hamburger.setAttribute('aria-expanded', String(isOpen));
-    document.body.style.overflow = isOpen ? 'hidden' : '';
+    navbar.classList.contains('open') ? closeNav() : openNav();
 });
 
+/* Fermer sur le bouton X du drawer */
+mobileHeader.querySelector('.nav-close-btn').addEventListener('click', closeNav);
+
+/* Fermer en cliquant sur le backdrop */
+backdrop.addEventListener('click', closeNav);
+
+/* Fermer en appuyant sur Échap */
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && navbar.classList.contains('open')) closeNav();
+});
+
+/* Fermer quand on clique un lien */
 navbar.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        navbar.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
+        if (window.innerWidth <= 768) closeNav();
     });
 });
+
+/* Animation stagger sur les items du drawer à l'ouverture */
+(function () {
+    const s = document.createElement('style');
+    s.textContent = `
+        @media (max-width: 768px) {
+            .nav-list > li { opacity: 0; transform: translateX(-14px); transition: opacity 0.28s ease, transform 0.28s ease; }
+            .navbar.open .nav-list > li { opacity: 1; transform: translateX(0); }
+            .navbar.open .nav-list > li:nth-child(1) { transition-delay: 0.08s; }
+            .navbar.open .nav-list > li:nth-child(2) { transition-delay: 0.13s; }
+            .navbar.open .nav-list > li:nth-child(3) { transition-delay: 0.18s; }
+            .navbar.open .nav-list > li:nth-child(4) { transition-delay: 0.23s; }
+            .navbar.open .nav-list > li:nth-child(5) { transition-delay: 0.28s; }
+            .navbar.open .nav-list > li:nth-child(6) { transition-delay: 0.33s; }
+        }
+    `;
+    document.head.appendChild(s);
+}());
 
 // ============================================
 // HERO SLIDER
