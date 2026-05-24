@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mairie de Ville - Commune</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-section">
+                <h1>🏛️ Mairie de Ville</h1>
+                <p class="subtitle">Commune de Ville</p>
+            </div>
+            <div class="contact-info">
+                <p>📞 01 23 45 67 89 | 📧 contact@ville.fr</p>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#horaires">Horaires</a></li>
+                <li><a href="#actualites">Actualités</a></li>
+                <li><a href="#evenements">Événements</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#equipe">Équipe</a></li>
+                <li><a href="#documents">Documents</a></li>
+                <li><a href="#formulaires">Formulaires</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Accueil -->
+        <section id="accueil" class="section hero">
+            <img src="https://picsum.photos/1200/400?random=1" alt="Bannière mairie" class="hero-image">
+            <div class="hero-content">
+                <h2>Bienvenue sur le site officiel</h2>
+                <p>Retrouvez toutes les informations concernant votre commune, ses services et ses actualités.</p>
+                <button class="cta-button" onclick="scrollTo('#services')">Découvrir nos services</button>
+            </div>
+        </section>
+
+        <!-- Services aux citoyens -->
+        <section id="services" class="section">
+            <h2>Services aux citoyens</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://picsum.photos/300/200?random=2" alt="Démarches administratives" class="service-image">
+                    <h3>📋 Démarches administratives</h3>
+                    <p>Certificats, permis, demandes de logement social et autres démarches en ligne.</p>
+                    <a href="#">En savoir plus →</a>
+                </div>
+                <div class="service-card">
+                    <img src="https://picsum.photos/300/200?random=3" alt="Stationnement" class="service-image">
+                    <h3>🚗 Stationnement</h3>
+                    <p>Informations sur les zones de stationnement et tarifs pratiqués.</p>
+                    <a href="#">En savoir plus →</a>
+                </div>
+                <div class="service-card">
+                    <img src="https://picsum.photos/300/200?random=4" alt="Éducation" class="service-image">
+                    <h3>🏫 Éducation</h3>
+                    <p>Écoles maternelles, primaires et inscription scolaire.</p>
+                    <a href="#">En savoir plus →</a>
+                </div>
+                <div class="service-card">
+                    <img src="https://picsum.photos/300/200?random=5" alt="Environnement" class="service-image">
+                    <h3>♻️ Environnement</h3>
+                    <p>Collecte des déchets, tri sélectif et propreté urbaine.</p>
+                    <a href="#">En savoir plus →</a>
+                </div>
+                <div class="service-card">
+                    <img src="https://picsum.photos/300/200?random=6" alt="Santé" class="service-image">
+                    <h3>🏥 Santé</h3>
+                    <p>Pharmacies, médecins et urgences disponibles 24h/24.</p>
+                    <a href="#">En savoir plus →</a>
+                </div>
+                <div class="service-card">
+                    <img src="https://picsum.photos/300/200?random=7" alt="Culture et Loisirs" class="service-image">
+                    <h3>🎭 Culture & Loisirs</h3>
+                    <p>Événements, bibliothèque, activités sportives et culturelles.</p>
+                    <a href="#">En savoir plus →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Horaires d'ouverture -->
+        <section id="horaires" class="section horaires-section">
+            <h2>Horaires d'ouverture</h2>
+            <div class="horaires-container">
+                <div class="horaires-card">
+                    <h3>Mairie</h3>
+                    <ul>
+                        <li><strong>Lundi - Vendredi:</strong> 9h00 - 12h00 / 14h00 - 17h00</li>
+                        <li><strong>Samedi:</strong> 9h00 - 12h00</li>
+                        <li><strong>Dimanche:</strong> Fermé</li>
+                    </ul>
+                </div>
+                <div class="horaires-card">
+                    <h3>Centre des services</h3>
+                    <ul>
+                        <li><strong>Lundi - Vendredi:</strong> 8h00 - 18h00</li>
+                        <li><strong>Samedi:</strong> 9h00 - 17h00</li>
+                        <li><strong>Dimanche:</strong> Fermé</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+img src="https://picsum.photos/350/200?random=8" alt="Fête de la ville" class="news-image">
+                    <div class="news-date">15 mai 2026</div>
+                    <h3>Fête de la ville</h3>
+                    <p>Rejoignez-nous pour la fête de la ville le 15 juin à partir de 10h. Au programme : animations, musique, restauration et activités pour les enfants.</p>
+                    <a href="#">Lire l'article</a>
+                </article>
+                <article class="news-card">
+                    <img src="https://picsum.photos/350/200?random=9" alt="Collecte de déchets" class="news-image">
+                    <div class="news-date">12 mai 2026</div>
+                    <h3>Collecte de déchets spéciale</h3>
+                    <p>Une collecte spéciale de déchets encombrants aura lieu le 20 mai dans tous les quartiers. Inscrivez-vous dès maintenant en mairie.</p>
+                    <a href="#">Lire l'article</a>
+                </article>
+                <article class="news-card">
+                    <img src="https://picsum.photos/350/200?random=10" alt="Travaux de voirie" class="news-image">
+                    <div class="news-date">12 mai 2026</div>
+                    <h3>Collecte de déchets spéciale</h3>
+                    <p>Une collecte spéciale de déchets encombrants aura lieu le 20 mai dans tous les quartiers. Inscrivez-vous dès maintenant en mairie.</p>
+                    <a href="#">Lire l'article</a>
+                </article>
+                <article class="news-card">
+                    <div class="news-date">10 mai 2026</div>
+                    <h3>Travaux de voirie</h3>
+                    <p>La rue de la Paix sera en travaux du 18 mai au 10 juin. Un itinéraire alternatif est proposé pour la circulation.</p>
+                    <a href="#">Lire l'article</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Événements -->
+        <section id="evenements" class="section">
+            <h2>Événements à venir</h2>
+            <div class="events-container">
+                <div class="event-item">
+                    <span class="event-date">📅 20 mai</span>
+                    <h3>Marché hebdomadaire</h3>
+                    <p>Marché agricole avec produits locaux - Place centrale dès 8h</p>
+                </div>
+                <div class="event-item">
+                    <span class="event-date">📅 25 mai</span>
+                    <h3>Réunion conseil municipal</h3>
+                    <p>Séance publique ouverte à tous - Salle du conseil à 19h</p>
+                </div>
+                <div class="event-item">
+                    <span class="event-date">📅 2 juin</span>
+                    <h3>Randonnée citoyenne</h3>
+                    <p>Découvrez les chemins de la commune - Rendez-vous parc de la Mairie</p>
+                </div>
+                <div class="event-item">
+                    <span class="event-date">📅 15 juin</span>
+                    <h3>Fête de la ville</h3>
+                    <p>Grande fête municipale - Animations, concert et feu d'artifice</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galerie photos -->
+        <section id="galerie" class="section galerie-section">
+            <h2>Galerie - Découvrez notre commune</h2>
+            <div class="galerie-grid">
+                <div class="galerie-item" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="https://picsum.photos/400/300?random=20" alt="Galerie 1">
+                    <div class="galerie-overlay">
+                        <span>👁️ Voir</span>
+                    </div>
+                </div>
+                <div class="galerie-item" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="https://picsum.photos/400/300?random=21" alt="Galerie 2">
+                    <div class="galerie-overlay">
+                        <span>👁️ Voir</span>
+                    </div>
+                </div>
+                <div class="galerie-item" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="https://picsum.photos/400/300?random=22" alt="Galerie 3">
+                    <div class="galerie-overlay">
+                        <span>👁️ Voir</span>
+                    </div>
+                </div>
+                <div class="galerie-item" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="https://picsum.photos/400/300?random=23" alt="Galerie 4">
+                    <div class="galerie-overlay">
+                        <span>👁️ Voir</span>
+                    </div>
+                </div>
+                <div class="galerie-item" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="https://picsum.photos/400/300?random=24" alt="Galerie 5">
+                    <div class="galerie-overlay">
+                        <span>👁️ Voir</span>
+                    </div>
+                </div>
+                <div class="galerie-item" onclick="openLightbox(this.querySelector('img').src)">
+                    <img src="https://picsum.photos/400/300?random=25" alt="Galerie 6">
+                    <div class="galerie-overlay">
+                        <span>👁️ Voir</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-image" src="" alt="">
+        </div>
+
+        <!-- Équipe de la mairie -->
+        <section id="equipe" class="section equipe-section">
+            <h2>Notre équipe</h2>
+            <div class="equipe-grid">
+                <div class="team-card">
+                    <img src="https://picsum.photos/250/250?random=30" alt="Maire">
+                    <h3>Jean Dupont</h3>
+                    <p class="role">Maire</p>
+                    <p>Responsable des politiques municipales et de la gestion générale.</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://picsum.photos/250/250?random=31" alt="Adjointe">
+                    <h3>Marie Martin</h3>
+                    <p class="role">Adjointe aux Finances</p>
+                    <p>Gestion du budget et des ressources financières municipales.</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://picsum.photos/250/250?random=32" alt="Adjoint">
+                    <h3>Pierre Bernard</h3>
+                    <p class="role">Adjoint aux Travaux</p>
+                    <p>Responsable de la voirie, travaux publics et espaces verts.</p>
+                </div>
+                <div class="team-card">
+                    <img src="https://picsum.photos/250/250?random=33" alt="Adjointe">
+                    <h3>Sophie Leclerc</h3>
+                    <p class="role">Adjointe à l'Éducation</p>
+                    <p>Suivi scolaire et activités jeunesse de la commune.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documents à télécharger -->
+        <section id="documents" class="section documents-section">
+            <h2>Documents à télécharger</h2>
+            <div class="documents-grid">
+                <div class="document-card">
+                    <div class="document-icon">📄</div>
+                    <h3>Budget municipal 2026</h3>
+                    <p>Document détaillant le budget municipal de l'année 2026.</p>
+                    <a href="#" class="download-btn">📥 Télécharger (2.3 MB)</a>
+                </div>
+                <div class="document-card">
+                    <div class="document-icon">📋</div>
+                    <h3>Arrêtés municipaux</h3>
+                    <p>Derniers arrêtés publiés par la mairie.</p>
+                    <a href="#" class="download-btn">📥 Télécharger (1.5 MB)</a>
+                </div>
+                <div class="document-card">
+                    <div class="document-icon">📊</div>
+                    <h3>Rapport annuel 2025</h3>
+                    <p>Rapport d'activité et bilan de l'année 2025.</p>
+                    <a href="#" class="download-btn">📥 Télécharger (3.1 MB)</a>
+                </div>
+                <div class="document-card">
+                    <div class="document-icon">🏛️</div>
+                    <h3>Délibérations</h3>
+                    <p>Compte-rendu des délibérations du conseil municipal.</p>
+                    <a href="#" class="download-btn">📥 Télécharger (1.8 MB)</a>
+                </div>
+                <div class="document-card">
+                    <div class="document-icon">🏘️</div>
+                    <h3>Plan d'urbanisme</h3>
+                    <p>Document de planification urbaine et développement.</p>
+                    <a href="#" class="download-btn">📥 Télécharger (4.2 MB)</a>
+                </div>
+                <div class="document-card">
+                    <div class="document-icon">📝</div>
+                    <h3>Formulaires courants</h3>
+                    <p>Accès aux formulaires les plus utilisés de la commune.</p>
+                    <a href="#" class="download-btn">📥 Télécharger (0.8 MB)</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulaires en ligne -->
+        <section id="formulaires" class="section formulaires-section">
+            <h2>Formulaires en ligne</h2>
+            <div class="formulaires-grid">
+                <div class="form-option">
+                    <h3>📋 Demande de certificat</h3>
+                    <p>Demander un certificat d'urbanisme ou certificat d'adresse.</p>
+                    <button class="form-btn" onclick="scrollTo('#contact')">Accéder au formulaire</button>
+                </div>
+                <div class="form-option">
+                    <h3>🏠 Demande de logement social</h3>
+                    <p>Constituer un dossier pour obtenir un logement social.</p>
+                    <button class="form-btn" onclick="scrollTo('#contact')">Accéder au formulaire</button>
+                </div>
+                <div class="form-option">
+                    <h3>🎫 Permis de stationnement</h3>
+                    <p>Demander ou renouveler un permis de stationnement.</p>
+                    <button class="form-btn" onclick="scrollTo('#contact')">Accéder au formulaire</button>
+                </div>
+                <div class="form-option">
+                    <h3>🎯 Signalement</h3>
+                    <p>Signaler un problème (route, éclairage, propreté...).</p>
+                    <button class="form-btn" onclick="scrollTo('#contact')">Accéder au formulaire</button>
+                </div>
+                <div class="form-option">
+                    <h3>🎪 Réservation de salle</h3>
+                    <p>Réserver une salle pour un événement ou réunion.</p>
+                    <button class="form-btn" onclick="scrollTo('#contact')">Accéder au formulaire</button>
+                </div>
+                <div class="form-option">
+                    <h3>📞 Rendez-vous</h3>
+                    <p>Prendre rendez-vous avec l'administration.</p>
+                    <button class="form-btn" onclick="scrollTo('#contact')">Accéder au formulaire</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section id="newsletter" class="section newsletter-section">
+            <div class="newsletter-container">
+                <h2>Restez informé</h2>
+                <p>Abonnez-vous à notre newsletter pour recevoir les dernières actualités de votre commune.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <div class="newsletter-input-group">
+                        <input type="email" id="newsletter-email" name="email" placeholder="Votre adresse email..." required>
+                        <button type="submit" class="newsletter-btn">S'abonner</button>
+                    </div>
+                    <div class="newsletter-options">
+                        <label>
+                            <input type="checkbox" name="actualites" checked> Actualités générales
+                        </label>
+                        <label>
+                            <input type="checkbox" name="evenements"> Événements
+                        </label>
+                        <label>
+                            <input type="checkbox" name="appels"> Appels d'offres
+                        </label>
+                    </div>
+                    <p class="newsletter-notice">✅ Vous recevrez un email de confirmation après votre inscription.</p>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section contact-section">
+            <h2>Nous contacter</h2>
+            <div class="contact-container">
+                <div class="contact-info-box">
+                    <h3>Informations de contact</h3>
+                    <p><strong>Adresse :</strong> 123 rue de la Mairie, 75000 Ville</p>
+                    <p><strong>Téléphone :</strong> 01 23 45 67 89</p>
+                    <p><strong>Email :</strong> contact@ville.fr</p>
+                    <p><strong>Web :</strong> www.ville.fr</p>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom complet :</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet :</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">-- Sélectionnez un sujet --</option>
+                            <option value="general">Demande générale</option>
+                            <option value="urgent">Demande urgente</option>
+                            <option value="plainte">Plainte ou signalement</option>
+                            <option value="suggestion">Suggestion ou remarque</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>À propos</h4>
+                <ul>
+                    <li><a href="#">Présentation</a></li>
+                    <li><a href="#">Histoire</a></li>
+                    <li><a href="#">Conseil municipal</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Démarches en ligne</a></li>
+                    <li><a href="#">Signalement</a></li>
+                    <li><a href="#">Urgences</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Suivez-nous</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mairie de Ville. Tous droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a></p>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
