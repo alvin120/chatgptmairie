@@ -1599,6 +1599,7 @@ footer { background: var(--primary); color: white; }
 /* ---- Grands écrans (≤ 1280px) ---- */
 @media (max-width: 1280px) {
     .container { padding: 0 32px; }
+    .nav-list { padding-left: 240px; }
 }
 
 /* ---- Tablette large (≤ 1100px) ---- */
@@ -1608,6 +1609,7 @@ footer { background: var(--primary); color: white; }
     .stats-inner { grid-template-columns: repeat(3, 1fr); }
     .stat-item:nth-child(3) { border-right: none; }
     .nav-link { padding: 0 10px; font-size: 0.82em; }
+    .nav-list { padding-left: 120px; }
 }
 
 /* ---- Tablette (≤ 960px) ---- */
@@ -1631,6 +1633,7 @@ footer { background: var(--primary); color: white; }
     .equipe-grid { grid-template-columns: repeat(2, 1fr); }
 
     .hero-content h2 { font-size: 2.4em; }
+    .nav-list { padding-left: 40px; }
 }
 
 /* ---- Mobile (≤ 768px) — Navbar Drawer ---- */
@@ -1672,7 +1675,7 @@ footer { background: var(--primary); color: white; }
 
     /* Liste de navigation */
     .nav-inner { padding: 10px 14px 28px; flex: 1; }
-    .nav-list { flex-direction: column; gap: 3px; width: 100%; }
+    .nav-list { flex-direction: column; gap: 3px; width: 100%; padding-left: 0; }
 
     .nav-link {
         padding: 12px 14px;
